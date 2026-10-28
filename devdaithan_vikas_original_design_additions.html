@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="mr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f07800"><title>देवदैठण विकास — ग्रामपंचायत पोर्टल</title>
+<style>
+:root{--orange:#f07800;--orange2:#ff9b26;--ink:#241a35;--muted:#777487;--bg:#f7f5fb;--line:#e8e4ef;--green:#229b62;--blue:#347ee4;--purple:#8550d8;--red:#e7473f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif}.app{max-width:680px;margin:auto;min-height:100vh;padding-bottom:90px}.hero{background:linear-gradient(135deg,#f07800,#ff9f2f);color:white;padding:22px 18px 45px;border-radius:0 0 35px 35px}.top{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{display:flex;align-items:center;gap:10px}.logo{width:53px;height:53px;border-radius:17px;background:#ffffff30;border:1px solid #ffffff70;display:grid;place-items:center;font-size:28px}.brand h1{font-size:20px;margin:0}.brand p{font-size:11px;margin:3px 0 0;color:#fff0d9}.lang{border:1px solid #ffffff80;background:#ffffff20;color:white;border-radius:30px;padding:9px 12px;font-size:12px}.weather{margin-top:20px;border:1px solid #ffffff65;background:#ffffff20;border-radius:18px;padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px}.weather b{font-size:19px}.weather small{display:block;font-size:11px;color:#fff1dd;margin-top:4px}.award{margin-top:12px;border:1px solid #ffffff60;background:#ffffff18;border-radius:17px;padding:13px;display:flex;gap:12px;align-items:center;font-size:13px}.floatcard{position:relative;margin:-25px 14px 0;background:#fff;border:1px solid var(--line);border-radius:23px;padding:17px;box-shadow:0 8px 24px #26143c0b}.floatcard .status{display:flex;align-items:center;gap:12px}.check{background:#e2f7ec;color:var(--green);width:46px;height:46px;border-radius:15px;display:grid;place-items:center;font-size:24px}.floatcard b{font-size:14px}.floatcard small{display:block;color:var(--muted);margin-top:4px;font-size:11px}.section{margin:24px 14px 0}.head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.head h2{font-size:21px;margin:0}.head a{color:var(--orange);font-weight:800;font-size:13px}.tag{font-size:10px;background:#ffe5f2;color:#d92c8a;padding:5px 9px;border-radius:30px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tile{border:1px solid var(--line);border-radius:22px;background:white;min-height:142px;padding:16px;text-align:left;color:var(--ink);box-shadow:0 3px 14px #26143c05}.tile .ico{width:47px;height:47px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:17px;background:var(--tint)}.tile b{font-size:15px;display:block}.tile small{font-size:11px;display:block;color:var(--muted);margin-top:5px}.tile.blue{background:linear-gradient(130deg,#347ee4,#4da0f8);color:white}.tile.pink{background:linear-gradient(130deg,#e92c89,#f15aa7);color:white}.tile.blue small,.tile.pink small{color:#fff0fa}.tile.red{background:linear-gradient(120deg,#e63b32,#ff7762);color:white}.quickgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.quick{border:0;background:transparent;color:var(--ink);font:inherit;text-align:center;padding:3px}.quick .circle{width:64px;height:64px;margin:0 auto 7px;border:4px solid var(--ring);background:var(--tint);border-radius:50%;display:grid;place-items:center;font-size:25px;box-shadow:0 5px 14px #a66b2518}.quick b{font-size:11px;line-height:1.35;display:block}.list{display:grid;gap:10px}.row{width:100%;display:flex;align-items:center;gap:12px;border:1px solid var(--line);background:white;border-radius:17px;padding:13px;text-align:left;color:var(--ink)}.rowico{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;font-size:23px;flex-shrink:0}.rowtext{flex:1}.rowtext b{font-size:13px;display:block}.rowtext small{font-size:11px;color:var(--muted);display:block;margin-top:4px}.arrow{font-size:22px;color:#9992a5}.notice{background:white;border:1px solid var(--line);border-radius:18px;padding:14px;display:flex;align-items:center;gap:12px}.notice .bell{width:45px;height:45px;border-radius:50%;background:#fff0df;color:var(--orange);display:grid;place-items:center;font-size:22px}.notice small{display:block;color:var(--muted);margin-top:5px;font-size:11px}.page{display:none;padding:0 14px}.page.active{display:block}.pagebar{display:flex;align-items:center;gap:10px;margin:20px 0}.back{border:0;border-radius:12px;background:#ffead4;color:#c45c00;width:42px;height:42px;font-size:24px}.panel{background:white;border:1px solid var(--line);border-radius:20px;padding:16px;margin:12px 0}.panel h3{font-size:16px;margin:0 0 10px}.intro{font-size:12px;color:var(--muted);line-height:1.65}.field{margin:12px 0}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #ded9e8;background:#fcfbff;border-radius:12px;font:inherit;font-size:13px}.field textarea{min-height:80px}.btn{width:100%;border:0;border-radius:13px;padding:13px;background:linear-gradient(100deg,#f07800,#ff9c2c);color:white;font-weight:800;font-size:13px;margin-top:8px}.btn.alt{background:#fff0df;color:#b65300}.info{background:#fff5e8;color:#89500e;border-radius:13px;padding:12px;font-size:11px;line-height:1.6}.profilehero{background:linear-gradient(135deg,#f07800,#ff9d2d);color:white;border-radius:23px;padding:20px;text-align:center}.avatar{width:110px;height:110px;margin:10px auto;border:5px solid white;border-radius:50%;background:#fff0df;color:#d86c00;display:grid;place-items:center;font-size:48px}.profilehero h2{margin:8px 0 4px}.profilehero p{margin:0 0 15px;font-size:13px}.outline{border:1px solid #fff;background:transparent;color:white;padding:10px 20px;border-radius:14px;font-weight:700}.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.badge{border:1px solid var(--line);border-radius:16px;background:white;text-align:center;padding:14px 4px}.badge .bi{font-size:28px;color:#b65d09}.badge b{display:block;font-size:11px;margin-top:5px}.badge small{font-size:10px;color:var(--muted)}.bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(680px,100%);display:grid;grid-template-columns:repeat(5,1fr);background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:8px 3px max(8px,env(safe-area-inset-bottom));z-index:5}.bottom button{border:0;background:transparent;color:#918b9f;font:inherit;font-size:10px;padding:5px 1px;display:grid;gap:4px;justify-items:center}.bottom span{font-size:22px}.bottom .on{color:#d96b00;font-weight:800;background:#fff0df;border-radius:24px}.toast{display:none;position:fixed;bottom:84px;left:50%;transform:translateX(-50%);max-width:92%;background:#251a35;color:white;border-radius:12px;padding:12px 15px;font-size:12px;z-index:20}@media(max-width:390px){.quickgrid{grid-template-columns:repeat(4,minmax(0,1fr))}.quick .circle{width:55px;height:55px}.head h2{font-size:19px}.tile{padding:13px;min-height:133px}}
+</style></head><body><div class="app">
+<header class="hero"><div class="top"><div class="brand"><div class="logo">🏛️</div><div><h1>ग्रामपंचायत देवदैठण</h1><p>नागरिक सेवा • विकास • पारदर्शकता</p></div></div><button class="lang" onclick="toast('भाषा पर्याय पुढील आवृत्तीत जोडता येतील')">文 मराठी</button></div>
+<div class="weather"><div><b>🌤️ गावाची माहिती</b><small>देवदैठण • जामखेड • अहिल्यानगर</small></div><div style="text-align:right"><b>🌾 शेतकरी सेवा</b><small>हवामान व बाजारभावासाठी बाह्य अधिकृत स्रोत जोडा</small></div></div>
+<div class="award">🏅 <div><b>डिजिटल ग्रामपंचायत — नागरिक सेवा</b><br><small>दाखले • मालमत्ता • तक्रारी • ग्रामसभा</small></div></div></header>
+<div id="home">
+<div class="floatcard"><div class="status"><div class="check">✓</div><div style="flex:1"><b>मालमत्ता व कर सेवा</b><small>मालमत्ता माहिती, घरपट्टी आणि पावतीसाठी</small></div><button style="border:0;background:#e7f8ef;color:#218653;border-radius:20px;padding:9px 12px;font-weight:800" onclick="showPage('property')">पहा ›</button></div></div>
+<section class="section"><div class="head"><h2>गाव बाजार</h2><span class="tag">नवीन</span></div><div class="grid"><button class="tile blue" onclick="showPage('services')"><span class="ico" style="--tint:#ffffff30">🛠️</span><b>गाव सेवा</b><small>दाखले आणि अर्ज</small></button><button class="tile pink" onclick="showPage('market')"><span class="ico" style="--tint:#ffffff30">🛍️</span><b>गाव बाजारपेठ</b><small>स्थानिक व्यवसाय / सेवा</small></button><button class="tile red" style="grid-column:1/-1;min-height:90px;display:flex;align-items:center;gap:13px" onclick="showPage('contacts')"><span class="ico" style="--tint:#ffffff30;margin:0">✚</span><span><b>आपत्कालीन संपर्क</b><small>रुग्णवाहिका • पोलीस • अग्निशमन</small></span><span style="margin-left:auto;font-size:23px">›</span></button></div></section>
+<section class="section"><div class="head"><h2>जलद सेवा</h2><a onclick="showPage('services')">सर्व पहा ›</a></div><div class="quickgrid">
+<button class="quick" onclick="openForm('जन्म दाखला')"><span class="circle" style="--ring:#e88a19;--tint:#fff0df">👶</span><b>जन्म दाखला</b></button>
+<button class="quick" onclick="openForm('मृत्यू दाखला')"><span class="circle" style="--ring:#8b5acb;--tint:#f0e7fb">🪷</span><b>मृत्यू दाखला</b></button>
+<button class="quick" onclick="openForm('रहिवासी दाखला')"><span class="circle" style="--ring:#3392d9;--tint:#e5f3ff">🏠</span><b>रहिवासी दाखला</b></button>
+<button class="quick" onclick="openForm('ग्रामपंचायत तक्रार')"><span class="circle" style="--ring:#249c68;--tint:#e1f7eb">📣</span><b>तक्रार</b></button>
+<button class="quick" onclick="openForm('विवाह नोंदणी दाखला')"><span class="circle" style="--ring:#dd4e9c;--tint:#ffebf5">💚</span><b>विवाह नोंदणी</b></button>
+<button class="quick" onclick="openForm('बांधकाम परवानगी')"><span class="circle" style="--ring:#e88a19;--tint:#fff0df">🛠️</span><b>बांधकाम परवानगी</b></button>
+<button class="quick" onclick="openForm('व्यवसाय दाखला (NOC)')"><span class="circle" style="--ring:#8b5acb;--tint:#f0e7fb">🏪</span><b>व्यवसाय NOC</b></button>
+<button class="quick" onclick="showPage('property')"><span class="circle" style="--ring:#3392d9;--tint:#e5f3ff">🪪</span><b>मालमत्ता कार्ड</b></button>
+<button class="quick" onclick="openForm('घरपट्टी / कर भरणा माहिती')"><span class="circle" style="--ring:#e88a19;--tint:#fff0df">₹</span><b>कर भरा</b></button>
+<button class="quick" onclick="showPage('citizenfacilities')"><span class="circle" style="--ring:#8b5acb;--tint:#f0e7fb">👨‍👩‍👧</span><b>नागरिक सुविधा</b></button>
+<button class="quick" onclick="showPage('krushimitra')"><span class="circle" style="--ring:#249c68;--tint:#e1f7eb">🚜</span><b>कृषी मित्र</b></button>
+<button class="quick" onclick="showPage('gis')"><span class="circle" style="--ring:#3392d9;--tint:#e5f3ff">🗺️</span><b>GIS नकाशा</b></button>
+<button class="quick" onclick="showPage('aitools')"><span class="circle" style="--ring:#8b5acb;--tint:#f0e7fb">🤖</span><b>AI साधने</b></button>
+<button class="quick" onclick="showPage('verify')"><span class="circle" style="--ring:#249c68;--tint:#e1f7eb">✅</span><b>दाखला सत्यापन</b></button>
+<button class="quick" onclick="showPage('library')"><span class="circle" style="--ring:#dd4e9c;--tint:#ffebf5">📚</span><b>डिजिटल ग्रंथालय</b></button>
+</div></section>
+<section class="section"><div class="head"><h2>गाव विशेष</h2><small style="color:#999">माहिती विभाग</small></div><div class="quickgrid">
+<button class="quick" onclick="showPage('committees')"><span class="circle" style="--ring:#e88a19;--tint:#fff0df">🏛️</span><b>प्रशासकीय समिती</b></button>
+<button class="quick" onclick="showPage('notices')"><span class="circle" style="--ring:#dc4949;--tint:#ffebeb">📰</span><b>बातम्या</b></button>
+<button class="quick" onclick="showPage('history')"><span class="circle" style="--ring:#8b5acb;--tint:#f0e7fb">📖</span><b>गावाचा इतिहास</b></button>
+<button class="quick" onclick="showPage('rti')"><span class="circle" style="--ring:#347ee4;--tint:#e5f3ff">⚖️</span><b>माहितीचा अधिकार</b></button>
+<button class="quick" onclick="showPage('villagemap')"><span class="circle" style="--ring:#249c68;--tint:#e1f7eb">🗺️</span><b>गाव नकाशा</b></button>
+<button class="quick" onclick="showPage('smartvillage')"><span class="circle" style="--ring:#80a91b;--tint:#eff8df">🌱</span><b>स्मार्ट ग्राम</b></button>
+<button class="quick" onclick="showPage('kunbi')"><span class="circle" style="--ring:#b86d20;--tint:#fff0df">📜</span><b>कुणबी नोंदी</b></button>
+<button class="quick" onclick="showPage('temples')"><span class="circle" style="--ring:#dd4e9c;--tint:#ffebf5">🛕</span><b>देवस्थाने</b></button>
+<button class="quick" onclick="showPage('anganwadi')"><span class="circle" style="--ring:#3392d9;--tint:#e5f3ff">👶</span><b>अंगणवाडी</b></button>
+<button class="quick" onclick="showPage('othercommittees')"><span class="circle" style="--ring:#6554d9;--tint:#efebff">👥</span><b>इतर समित्या</b></button>
+</div></section>
+<section class="section"><div class="head"><h2>डिजिटल ग्रामपंचायत</h2><small>सेवा एकाच ठिकाणी</small></div><div class="grid"><button class="tile" onclick="showPage('property')"><span class="ico" style="--tint:#fff0df">🧾</span><b>मालमत्ता व घरपट्टी</b><small>कर माहिती / पावती विनंती</small></button><button class="tile" onclick="showPage('works')"><span class="ico" style="--tint:#e1f7eb">🏗️</span><b>विकासकामे</b><small>कामे व निधी माहिती</small></button><button class="tile" onclick="showPage('notices')"><span class="ico" style="--tint:#f0e7fb">🔔</span><b>ताज्या सूचना</b><small>ग्रामसभा / नोटीस</small></button><button class="tile" onclick="showPage('profile')"><span class="ico" style="--tint:#e5f3ff">👤</span><b>नागरिक प्रोफाइल</b><small>माझी माहिती व अर्ज</small></button></div></section>
+<section class="section"><div class="head"><h2>ताज्या सूचना</h2><a onclick="showPage('notices')">सर्व पहा</a></div><div class="notice"><span class="bell">📢</span><div><b>ग्रामपंचायत सूचना</b><small>अधिकृत सूचना जोडल्यावर येथे प्रकाशित होतील.</small></div><span class="arrow">›</span></div></section>
+<section class="section"><div class="head"><h2>वेळापत्रक</h2><a onclick="showPage('schedule')">सविस्तर ›</a></div><button class="row" onclick="showPage('schedule')"><span class="rowico" style="background:#fff0df">🕒</span><span class="rowtext"><b>आजचे वेळापत्रक</b><small>कार्यालयीन वेळ, ग्रामसभा व शिबिरे</small></span><span class="arrow">›</span></button></section>
+</div>
+<section id="services" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>सेवा व दाखले</h2></div><p class="intro">खालील सेवांसाठी अर्जाचा नमुना भरा. प्रत्यक्ष ऑनलाइन सादरीकरणासाठी अधिकृत सर्व्हर जोडणे आवश्यक आहे.</p><div class="grid" id="servicegrid"></div><div class="info">ही सेवा यादी नमुना आहे. दाखला जारी करणे किंवा अर्ज स्वीकारणे हे ग्रामपंचायतीच्या अधिकृत प्रक्रियेनुसारच होईल.</div></section>
+<section id="formpage" class="page"><div class="pagebar"><button class="back" onclick="showPage('services')">‹</button><h2 id="formtitle">अर्ज</h2></div><div class="panel"><p class="intro">माहिती भरा. सध्या नोंद या ब्राउझरमध्येच जतन होते; ग्रामपंचायत कार्यालयात आपोआप पाठवली जात नाही.</p><form id="requestform" onsubmit="saveRequest(event)">
+<div class="field"><label>सेवा</label><input id="service" readonly></div>
+<div id="specificFields"></div>
+<div class="field"><label>अर्जदाराचे पूर्ण नाव *</label><input id="fullname" required></div>
+<div class="field"><label>मोबाईल क्रमांक *</label><input id="mobile" type="tel" pattern="[0-9]{10}" maxlength="10" required></div>
+<div class="field"><label>पत्ता / वॉर्ड / वस्ती</label><input id="address"></div>
+<div class="field"><label>कागदपत्रांची नावे</label><input id="docs" placeholder="उदा. जन्म नोंद / विवाह पुरावा (आधार क्रमांक लिहू नका)"></div>
+<button class="btn" type="submit">📝 अर्जाची नोंद जतन करा</button>
+<button class="btn alt" type="button" onclick="printRequest()">🖨️ प्रिंट / PDF</button>
+</form></div><div class="info">हा नमुना फॉर्म आहे. संवेदनशील माहिती (उदा. आधार क्रमांक / OTP / बँक तपशील) येथे भरू नका. अर्ज सध्या या ब्राउझरमध्येच जतन होतो; अधिकृत पोर्टल किंवा Firebase जोडल्याशिवाय कार्यालयात पाठवला जात नाही.</div></section>
+<section id="property" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>मालमत्ता व कर</h2></div><div class="grid"><button class="tile" onclick="openForm('घरपट्टी / मालमत्ता कर चौकशी')"><span class="ico" style="--tint:#fff0df">🧾</span><b>घरपट्टी चौकशी</b><small>कर / पावती विनंती</small></button><button class="tile" onclick="openForm('नमुना ८ / मालमत्ता उतारा')"><span class="ico" style="--tint:#e5f3ff">🏠</span><b>नमुना ८ उतारा</b><small>मालमत्ता नोंद विनंती</small></button><button class="tile" onclick="openForm('मालमत्ता फेरफार')"><span class="ico" style="--tint:#e1f7eb">🔁</span><b>मालमत्ता फेरफार</b><small>नाव / नोंद बदल विनंती</small></button><button class="tile" onclick="openForm('मालमत्ता कार्ड')"><span class="ico" style="--tint:#f0e7fb">🪪</span><b>मालमत्ता कार्ड</b><small>माहिती विनंती</small></button></div><div class="info">मालमत्तेची खरी माहिती, कर बाकी किंवा पावती पाहण्यासाठी अधिकृत ग्रामपंचायत डेटाबेस जोडलेला असणे आवश्यक आहे.</div></section>
+<section id="profile" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>प्रोफाइल</h2></div><div class="profilehero"><div style="text-align:left;font-weight:800">🪪 नागरिक ओळखपत्र <span style="float:right">✓ नमुना</span></div><div class="avatar">👤</div><h2 id="pname">नागरिक</h2><p id="pmobile">मोबाईल जोडलेला नाही</p><button class="outline" onclick="editProfile()">✎ माहिती संपादित करा</button></div><section class="section"><div class="head"><h2>माझे बॅजेस</h2><span class="tag">नमुना</span></div><div class="badges"><div class="badge"><div class="bi">📱</div><b>डिजिटल नागरिक</b><small>प्रोफाइल</small></div><div class="badge"><div class="bi">₹</div><b>नियमित करदाता</b><small>पडताळणी आवश्यक</small></div><div class="badge"><div class="bi">🏅</div><b>दाखला संग्रहक</b><small>नमुना</small></div><div class="badge"><div class="bi">🌅</div><b>लवकर करदाता</b><small>पडताळणी आवश्यक</small></div><div class="badge"><div class="bi">🙋</div><b>जागरूक नागरिक</b><small>नमुना</small></div></div></section><div class="panel"><h3>माझे विभाग</h3><button class="row" onclick="showPage('property')"><span class="rowico" style="background:#fff0df">🏘️</span><span class="rowtext"><b>माझी मालमत्ता</b><small>कर तपशील व भरणा माहिती</small></span><span class="arrow">›</span></button><button class="row" onclick="showPage('myapplications')"><span class="rowico" style="background:#e5f3ff">📄</span><span class="rowtext"><b>माझे अर्ज</b><small>दाखले व परवान्यांची स्थिती</small></span><span class="arrow">›</span></button><button class="row" onclick="showPage('mycomplaints')"><span class="rowico" style="background:#ffebeb">⚠️</span><span class="rowtext"><b>माझ्या तक्रारी</b><small>तक्रारींची स्थिती पाहा</small></span><span class="arrow">›</span></button></div><div class="panel"><h3>माझे अर्ज</h3><div id="myrequests" class="intro">अद्याप या ब्राउझरमध्ये अर्ज नोंदलेले नाहीत.</div></div></section>
+<section id="notices" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>सूचना व ग्रामसभा</h2></div><div class="panel"><h3>📢 अधिकृत सूचना</h3><p class="intro">ग्रामसभा तारीख, अजेंडा, ठराव, सार्वजनिक नोटिसा आणि बातम्या अधिकृतरीत्या प्रकाशित केल्यावर येथे दाखवता येतील.</p><div class="info">सध्या ग्रामपंचायत नोटीस डेटाबेस जोडलेला नाही.</div></div><button class="row" onclick="openForm('ग्रामसभा विषय / निवेदन')"><span class="rowico" style="background:#fff0df">📝</span><span class="rowtext"><b>ग्रामसभेसाठी विषय सुचवा</b><small>निवेदनाचा नमुना अर्ज</small></span><span class="arrow">›</span></button></section>
+<section id="works" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>विकासकामे</h2></div><div class="panel"><h3>🏗️ गावातील विकासकामे व निधी</h3><p class="intro">कामाचे नाव, मंजूर निधी, खर्च, कंत्राटदार आणि सद्यस्थिती दाखवण्यासाठी अधिकृत नोंदी जोडाव्या लागतील.</p><div class="info">पडताळलेला डेटाबेस नसल्यामुळे येथे आकडे किंवा कामांची बनावट यादी दाखवलेली नाही.</div></div><button class="row" onclick="openForm('विकासकामाबाबत माहिती / तक्रार')"><span class="rowico" style="background:#e1f7eb">📣</span><span class="rowtext"><b>विकासकामाबाबत तक्रार / माहिती</b><small>अर्जाचा नमुना</small></span><span class="arrow">›</span></button></section>
+<section id="contacts" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>संपर्क व आपत्कालीन मदत</h2></div><div class="list"><div class="row"><span class="rowico" style="background:#ffe7e5">🚑</span><span class="rowtext"><b>रुग्णवाहिका</b><small>108</small></span><a href="tel:108">कॉल</a></div><div class="row"><span class="rowico" style="background:#e5f3ff">🚨</span><span class="rowtext"><b>राष्ट्रीय आपत्कालीन मदत</b><small>112</small></span><a href="tel:112">कॉल</a></div><div class="row"><span class="rowico" style="background:#fff0df">🔥</span><span class="rowtext"><b>अग्निशमन</b><small>101</small></span><a href="tel:101">कॉल</a></div></div><div class="panel"><h3>ग्रामपंचायत कार्यालय</h3><p class="intro">अधिकृत फोन क्रमांक, ई-मेल, ग्रामसेवक व सरपंच यांचे पडताळलेले तपशील उपलब्ध झाल्यावर येथे जोडता येतील.</p></div></section>
+<section id="market" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>गाव बाजारपेठ</h2></div><div class="panel"><h3>स्थानिक व्यवसाय व सेवा</h3><p class="intro">गावातील दुकाने, शेतमाल, स्वयं-सहायता गट आणि सेवा यांची यादी प्रशासकीय पडताळणीनंतर प्रकाशित करता येईल.</p></div><button class="row" onclick="openForm('स्थानिक व्यवसाय नोंदणी विनंती')"><span class="rowico" style="background:#f0e7fb">🏪</span><span class="rowtext"><b>व्यवसाय नोंदणीसाठी विनंती</b><small>माहिती सादर करा</small></span><span class="arrow">›</span></button></section>
+<section id="committees" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>प्रशासकीय समिती</h2></div><div class="panel"><p class="intro">समिती सदस्य, कार्यकाळ, सभा आणि निर्णय यांची अधिकृत माहिती ग्रामपंचायतीकडून मिळाल्यावर येथे प्रकाशित करता येईल.</p></div></section>
+<section id="history" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>गावाचा इतिहास</h2></div><div class="panel"><p class="intro">देवदैठण गावाचा इतिहास, सांस्कृतिक स्थळे, परंपरा आणि महत्त्वाची माहिती येथे जोडता येईल. पडताळलेली माहिती उपलब्ध झाल्यावरच प्रकाशित करावी.</p></div></section>
+<section id="rti" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>माहितीचा अधिकार</h2></div><div class="panel"><p class="intro">माहिती अधिकार अर्जासाठी अधिकृत प्रक्रिया आणि संबंधित जनमाहिती अधिकाऱ्याचे पडताळलेले तपशील आवश्यक आहेत.</p><button class="btn" onclick="openForm('माहिती अधिकार / माहिती विनंती')">📝 माहिती विनंतीचा नमुना</button></div></section>
+<section id="citizenfacilities" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>नागरिक सुविधा</h2></div><div class="panel"><h3>नागरिकांसाठी सुविधा</h3><p class="intro">पाणी, स्वच्छता, रस्ते, पथदिवे, सार्वजनिक जागा आणि इतर मूलभूत सुविधांबाबत माहिती किंवा विनंती नोंदवा.</p><button class="btn" onclick="openForm('नागरिक सुविधा विनंती')">विनंती नोंदवा</button></div></section>
+<section id="krushimitra" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>कृषी मित्र</h2></div><div class="panel"><h3>शेतकरी माहिती केंद्र</h3><p class="intro">शेती योजना, पशुधन, कृषी अवजारे, हवामान आणि बाजारभावाची पडताळलेली माहिती येथे जोडता येईल. अधिकृत माहिती उपलब्ध नसल्यास ती अंदाजाने दाखवली जाणार नाही.</p><button class="btn alt" onclick="openForm('शेतकरी योजना / कृषी माहिती विनंती')">कृषी माहिती विनंती</button></div></section>
+<section id="gis" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>GIS नकाशा</h2></div><div class="panel"><h3>गावाचा भौगोलिक नकाशा</h3><p class="intro">अधिकृत GIS नकाशा किंवा मालमत्ता नकाशा जोडल्यावर येथे पाहता येईल. सध्या नकाशा स्रोत जोडलेला नाही.</p></div></section>
+<section id="aitools" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>AI साधने</h2></div><div class="panel"><h3>माहिती व अर्ज सहाय्य</h3><p class="intro">अर्जाचा मसुदा किंवा योजनेची प्राथमिक माहिती तयार करण्यासाठी सहाय्यक साधने पुढील आवृत्तीत जोडता येतील. येथे सध्या AI सेवा जोडलेली नाही.</p><button class="btn" onclick="openForm('अर्ज मसुदा / माहिती सहाय्य विनंती')">माहिती सहाय्य विनंती</button></div></section>
+<section id="verify" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>दाखला सत्यापन</h2></div><div class="panel"><h3>दाखला पडताळणी</h3><p class="intro">दाखला क्रमांकाची अधिकृत पडताळणी करण्यासाठी ग्रामपंचायत किंवा संबंधित विभागाची सुरक्षित पडताळणी सेवा आवश्यक आहे. सध्या थेट पडताळणी जोडलेली नाही.</p><button class="btn alt" onclick="openForm('दाखला पडताळणी विनंती')">पडताळणी विनंती</button></div></section>
+<section id="library" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>डिजिटल ग्रंथालय</h2></div><div class="panel"><h3>महत्त्वाची कागदपत्रे</h3><p class="intro">ग्रामसभा नोटिसा, ठराव, शासन निर्णय, योजना मार्गदर्शिका आणि सार्वजनिक अहवालांची पडताळलेली प्रत येथे जोडता येईल.</p></div></section>
+<section id="villagemap" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>गाव नकाशा</h2></div><div class="panel"><p class="intro">गावाचा अधिकृत नकाशा, वस्ती, रस्ते व सार्वजनिक सुविधा यांची माहिती उपलब्ध झाल्यावर येथे जोडता येईल.</p></div></section>
+<section id="smartvillage" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>स्मार्ट ग्राम</h2></div><div class="panel"><p class="intro">गावातील डिजिटल सुविधा, स्वच्छता, पाणी, ऊर्जा आणि विकास उपक्रमांची पडताळलेली माहिती येथे प्रकाशित करता येईल.</p></div></section>
+<section id="kunbi" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>कुणबी नोंदी</h2></div><div class="panel"><p class="intro">कुणबी नोंदींसंबंधी अधिकृत अभिलेख किंवा शासनमान्य शोधस्रोत उपलब्ध झाल्यावरच माहिती दाखवली जाईल. येथे कोणतीही वैयक्तिक नोंद आपोआप उपलब्ध नाही.</p></div></section>
+<section id="temples" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>देवस्थाने</h2></div><div class="panel"><p class="intro">गावातील देवस्थाने, व्यवस्थापन संपर्क, सार्वजनिक माहिती व कार्यक्रमांची पडताळलेली माहिती येथे जोडता येईल.</p></div></section>
+<section id="anganwadi" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>अंगणवाडी</h2></div><div class="panel"><p class="intro">अंगणवाडीचे अधिकृत संपर्क, वेळ, सेवा आणि सार्वजनिक सूचना उपलब्ध झाल्यावर येथे प्रकाशित करता येतील.</p></div></section>
+<section id="othercommittees" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>इतर समित्या</h2></div><div class="panel"><p class="intro">गावातील इतर समित्यांची नावे, सदस्य, कार्यकाळ व निर्णय यांची अधिकृत माहिती येथे जोडता येईल.</p></div></section>
+<section id="schedule" class="page"><div class="pagebar"><button class="back" onclick="goHome()">‹</button><h2>वेळापत्रक</h2></div><div class="panel"><h3>कार्यालयीन वेळ, ग्रामसभा व शिबिरे</h3><p class="intro">अधिकृत वेळापत्रक अद्याप जोडलेले नाही. ग्रामपंचायतीकडून पडताळलेली तारीख, वेळ व ठिकाण मिळाल्यावर येथे प्रकाशित करता येईल.</p></div></section>
+<section id="myapplications" class="page"><div class="pagebar"><button class="back" onclick="showPage('profile')">‹</button><h2>माझे अर्ज</h2></div><div class="panel"><div id="myrequests2" class="intro">या ब्राउझरमध्ये नोंदलेले अर्ज येथे दिसतील.</div></div></section>
+<section id="mycomplaints" class="page"><div class="pagebar"><button class="back" onclick="showPage('profile')">‹</button><h2>माझ्या तक्रारी</h2></div><div class="panel"><p class="intro">तक्रारींची स्थिती दाखवण्यासाठी तक्रार नोंदणी आणि अधिकृत प्रतिसाद प्रणाली जोडावी लागेल.</p><button class="btn" onclick="openForm('ग्रामपंचायत तक्रार')">तक्रार नोंदवा</button></div></section>
+<nav class="bottom"><button id="navhome" class="on" onclick="goHome()"><span>⌂</span>मुख्यपृष्ठ</button><button onclick="showPage('property')"><span>🏘️</span>मालमत्ता</button><button onclick="showPage('services')"><span>▦</span>सेवा</button><button onclick="showPage('notices')"><span>♧</span>सूचना</button><button onclick="showPage('profile')"><span>♙</span>प्रोफाइल</button></nav><div id="toast" class="toast"></div>
+<script>
+const serviceNames=['जन्म दाखला','मृत्यू दाखला','विवाह नोंदणी दाखला','रहिवासी दाखला','बांधकाम परवानगी','व्यवसाय दाखला (NOC)','मालमत्ता फेरफार','मालमत्ता कार्ड','नमुना ८ / मालमत्ता उतारा','घरपट्टी / कर पावती','पाणीपुरवठा तक्रार','स्वच्छता / गटार तक्रार','रस्ते / पथदिवे तक्रार','ग्रामपंचायत तक्रार','मनरेगा / रोजगार विनंती','ग्रामसभा विषय / निवेदन','विकासकामाबाबत माहिती / तक्रार','माहिती अधिकार / माहिती विनंती','स्थानिक व्यवसाय नोंदणी विनंती','इतर अर्ज / निवेदन'];
+const colors=['#fff0df','#f0e7fb','#e1f7eb','#e5f3ff','#fff0df','#f0e7fb','#e1f7eb','#e5f3ff'];
+const icons=['👶','🪷','💚','🏠','🛠️','🏪','🔁','🪪','📄','🧾','🚰','🧹','💡','📣','👷','🗓️','🏗️','⚖️','🛍️','📝'];
+const pages=['services','formpage','property','profile','notices','works','contacts','market','committees','history','rti','citizenfacilities','krushimitra','gis','aitools','verify','library','villagemap','smartvillage','kunbi','temples','anganwadi','othercommittees','schedule','myapplications','mycomplaints'];
+function showPage(id){document.getElementById('home').style.display='none';pages.forEach(p=>{let el=document.getElementById(p);if(el)el.classList.toggle('active',p===id)});document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('on'));let map={property:1,services:2,notices:3,profile:4};document.querySelectorAll('.bottom button')[map[id]??0].classList.add('on');window.scrollTo(0,0);if(id==='profile')refreshProfile()}
+function goHome(){document.getElementById('home').style.display='block';pages.forEach(p=>{let el=document.getElementById(p);if(el)el.classList.remove('active')});document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('on'));document.getElementById('navhome').classList.add('on');window.scrollTo(0,0)}
+const serviceFields = {
+'जन्म दाखला': [
+ ['बालकाचे नाव (मराठी)','text',true],['बालकाचे नाव (इंग्रजी)','text',true],
+ ['लिंग','select',true,['निवडा','मुलगा','मुलगी','इतर']],
+ ['जन्मतारीख','date',true],['जन्मस्थळ (मराठी)','text',true],['जन्मस्थळ (इंग्रजी)','text',true],
+ ['वडिलांचे नाव','text',true],['आईचे नाव','text',true],['जन्माची नोंद / रुग्णालयाचे नाव','text',false]
+],
+'मृत्यू दाखला': [
+ ['मृत व्यक्तीचे पूर्ण नाव','text',true],['मृत्यूची तारीख','date',true],['मृत्यूचे ठिकाण','text',true],
+ ['वडिलांचे / पतीचे नाव','text',false],['नोंदणी क्रमांक (असल्यास)','text',false]
+],
+'विवाह नोंदणी दाखला': [
+ ['पतीचे पूर्ण नाव','text',true],['पत्नीचे पूर्ण नाव','text',true],
+ ['पतीची जन्मतारीख','date',false],['पत्नीची जन्मतारीख','date',false],
+ ['विवाहाची तारीख','date',true],['विवाहाचे ठिकाण','text',true],
+ ['साक्षीदार १ चे नाव','text',false],['साक्षीदार २ चे नाव','text',false]
+],
+'रहिवासी दाखला': [
+ ['अर्जदाराचे पूर्ण नाव','text',true],['रहिवास सुरू झाल्याची तारीख / वर्ष','text',true],
+ ['गाव / तालुका / जिल्हा','text',true],['दाखल्याचा उद्देश','text',true]
+],
+'बांधकाम परवानगी': [
+ ['मालकाचे पूर्ण नाव','text',true],['मालमत्ता / घर क्रमांक','text',true],
+ ['जागेचा पत्ता / ठिकाण','text',true],['प्रस्तावित बांधकामाचा प्रकार','select',true,['निवडा','नवीन बांधकाम','दुरुस्ती','विस्तार']],
+ ['बांधकाम क्षेत्रफळ (असल्यास)','text',false]
+],
+'व्यवसाय दाखला (NOC)': [
+ ['व्यवसायाचे नाव','text',true],['व्यवसायाचा प्रकार','text',true],
+ ['व्यवसायाचे ठिकाण / पत्ता','text',true],['मालकाचे नाव','text',true]
+],
+'मालमत्ता फेरफार': [
+ ['मालमत्ता / घर क्रमांक','text',true],['सध्याच्या मालकाचे नाव','text',true],
+ ['नवीन मालकाचे नाव','text',true],['फेरफाराचे कारण','select',true,['निवडा','खरेदी-विक्री','वारसा','भेट','इतर']]
+],
+'मालमत्ता कार्ड': [
+ ['मालमत्ता / घर क्रमांक','text',true],['मालकाचे नाव','text',true],['मागणीचा उद्देश','text',true]
+],
+'नमुना ८ / मालमत्ता उतारा': [
+ ['मालमत्ता / घर क्रमांक','text',true],['मालकाचे नाव','text',true]
+],
+'घरपट्टी / कर पावती': [
+ ['मालमत्ता / घर क्रमांक','text',true],['करदात्याचे नाव','text',true],['आर्थिक वर्ष','text',false]
+],
+'घरपट्टी / मालमत्ता कर चौकशी': [
+ ['मालमत्ता / घर क्रमांक','text',true],['करदात्याचे नाव','text',true],['चौकशीचा तपशील','textarea',true]
+],
+'पाणीपुरवठा तक्रार': [
+ ['तक्रारीचे ठिकाण','text',true],['तक्रारीचा प्रकार','select',true,['निवडा','पाणी येत नाही','गळती','दूषित पाणी','इतर']],['तक्रारीचा तपशील','textarea',true]
+],
+'स्वच्छता / गटार तक्रार': [
+ ['तक्रारीचे ठिकाण','text',true],['तक्रारीचा तपशील','textarea',true]
+],
+'रस्ते / पथदिवे तक्रार': [
+ ['तक्रारीचे ठिकाण','text',true],['तक्रारीचा प्रकार','select',true,['निवडा','रस्ता खराब','पथदिवा बंद','इतर']],['तक्रारीचा तपशील','textarea',true]
+],
+'ग्रामपंचायत तक्रार': [
+ ['तक्रारीचा प्रकार','text',true],['तक्रारीचे ठिकाण','text',true],['तक्रारीचा तपशील','textarea',true]
+],
+'मनरेगा / रोजगार विनंती': [
+ ['जॉब कार्ड क्रमांक (असल्यास)','text',false],['काम / रोजगाराची विनंती','textarea',true]
+],
+'ग्रामसभा विषय / निवेदन': [
+ ['ग्रामसभेसाठी विषय','text',true],['निवेदनाचा तपशील','textarea',true]
+],
+'विकासकामाबाबत माहिती / तक्रार': [
+ ['विकासकामाचे नाव / ठिकाण','text',true],['विनंतीचा प्रकार','select',true,['निवडा','माहिती हवी','तक्रार नोंदवायची आहे']],['तपशील','textarea',true]
+],
+'माहिती अधिकार / माहिती विनंती': [
+ ['मागितलेल्या माहितीचा विषय','text',true],['माहितीचा कालावधी','text',false],['माहितीचा तपशील','textarea',true]
+],
+'स्थानिक व्यवसाय नोंदणी विनंती': [
+ ['व्यवसायाचे नाव','text',true],['व्यवसायाचा प्रकार','text',true],['व्यवसायाचे ठिकाण','text',true]
+],
+'व्यवसाय नोंदणी विनंती': [
+ ['व्यवसायाचे नाव','text',true],['व्यवसायाचा प्रकार','text',true],['व्यवसायाचे ठिकाण','text',true]
+],
+'स्थानिक व्यवसाय नोंदणी विनंती': [
+ ['व्यवसायाचे नाव','text',true],['व्यवसायाचा प्रकार','text',true],['व्यवसायाचे ठिकाण','text',true]
+],
+'मालमत्ता कर चौकशी': [
+ ['मालमत्ता / घर क्रमांक','text',true],['चौकशीचा तपशील','textarea',true]
+],
+'इतर अर्ज / निवेदन': [
+ ['अर्जाचा विषय','text',true],['अर्जाचा तपशील','textarea',true]
+]
+};
+function makeField(label,type,required,options){
+ let wrap=document.createElement('div'); wrap.className='field';
+ let id='sf_'+Math.random().toString(36).slice(2,10);
+ let lab=document.createElement('label'); lab.textContent=label+(required?' *':''); lab.htmlFor=id; wrap.appendChild(lab);
+ let el;
+ if(type==='select'){
+   el=document.createElement('select');
+   (options||['निवडा']).forEach((o,i)=>{let op=document.createElement('option');op.value=i===0?'':o;op.textContent=o;el.appendChild(op)});
+ } else if(type==='textarea'){el=document.createElement('textarea');}
+ else {el=document.createElement('input');el.type=type;}
+ el.id=id; el.dataset.label=label; if(required)el.required=true;
+ wrap.appendChild(el); return wrap;
+}
+function openForm(name){
+ document.getElementById('service').value=name;
+ document.getElementById('formtitle').textContent=name;
+ document.getElementById('requestform').reset();
+ document.getElementById('service').value=name;
+ const box=document.getElementById('specificFields'); box.innerHTML='';
+ const fields=serviceFields[name] || [['अर्जाचा तपशील','textarea',true]];
+ fields.forEach(f=>box.appendChild(makeField(f[0],f[1],f[2],f[3])));
+ showPage('formpage');
+}
+function toast(s){let t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',3500)}
+function formData(){
+ const data={};
+ document.querySelectorAll('#specificFields input,#specificFields select,#specificFields textarea').forEach(el=>{data[el.dataset.label]=el.value});
+ return data;
+}
+function saveRequest(e){
+ e.preventDefault();
+ let r={service:document.getElementById('service').value, name:document.getElementById('fullname').value,
+ mobile:document.getElementById('mobile').value,address:document.getElementById('address').value,
+ docs:document.getElementById('docs').value,details:formData(),created:new Date().toLocaleString('mr-IN')};
+ let a=JSON.parse(localStorage.getItem('devdaithan_requests')||'[]');a.push(r);
+ localStorage.setItem('devdaithan_requests',JSON.stringify(a));
+ localStorage.setItem('devdaithan_name',r.name);localStorage.setItem('devdaithan_mobile',r.mobile);
+ toast('अर्ज या ब्राउझरमध्ये जतन झाला; ग्रामपंचायतीकडे पाठवलेला नाही.');
+}
+function printRequest(){
+ const form=document.getElementById('requestform');
+ if(!form.reportValidity())return;
+ let w=window.open('','_blank');if(!w){toast('ब्राउझरमध्ये पॉप-अप परवानगी द्या.');return}
+ let esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ let r={service:document.getElementById('service').value,name:document.getElementById('fullname').value,mobile:document.getElementById('mobile').value,address:document.getElementById('address').value,docs:document.getElementById('docs').value,details:formData()};
+ let rows=Object.entries(r.details).map(([k,v])=>'<p><b>'+esc(k)+':</b> '+esc(v)+'</p>').join('');
+ w.document.write('<html lang="mr"><meta charset="utf-8"><body style="font-family:Arial,sans-serif;padding:24px"><h2>ग्रामपंचायत देवदैठण — अर्जाचा नमुना</h2><hr><p><b>सेवा:</b> '+esc(r.service)+'</p><p><b>अर्जदार:</b> '+esc(r.name)+'</p><p><b>मोबाईल:</b> '+esc(r.mobile)+'</p><p><b>पत्ता:</b> '+esc(r.address)+'</p>'+rows+'<p><b>कागदपत्रांची नावे:</b> '+esc(r.docs)+'</p><hr><p>टीप: अधिकृत अर्ज म्हणून दाखल करण्यासाठी संबंधित अधिकृत प्रक्रिया वापरा.</p><br>सही: __________________<\/body><\/html>');
+ w.document.close();w.print();
+}
+function editProfile(){let n=prompt('नागरिकाचे नाव',localStorage.getItem('devdaithan_name')||'');if(n!==null)localStorage.setItem('devdaithan_name',n);let m=prompt('मोबाईल क्रमांक',localStorage.getItem('devdaithan_mobile')||'');if(m!==null)localStorage.setItem('devdaithan_mobile',m);refreshProfile()}
+function refreshProfile(){document.getElementById('pname').textContent=localStorage.getItem('devdaithan_name')||'नागरिक';document.getElementById('pmobile').textContent=localStorage.getItem('devdaithan_mobile')||'मोबाईल जोडलेला नाही';let a=JSON.parse(localStorage.getItem('devdaithan_requests')||'[]');document.getElementById('myrequests').innerHTML=a.length?a.slice().reverse().map(r=>'• '+r.service+' — '+r.created).join('<br>'):'अद्याप या ब्राउझरमध्ये अर्ज नोंदलेले नाहीत.';let a2=document.getElementById('myrequests2');if(a2)a2.innerHTML=a.length?a.slice().reverse().map(r=>'• '+r.service+' — '+r.created).join('<br>'):'अद्याप या ब्राउझरमध्ये अर्ज नोंदलेले नाहीत.'}
+function buildServices(){let g=document.getElementById('servicegrid');serviceNames.forEach((s,i)=>{let b=document.createElement('button');b.className='tile';b.innerHTML='<span class="ico" style="--tint:'+colors[i%colors.length]+'">'+icons[i]+'</span><b>'+s+'</b><small>अर्ज / विनंती</small>';b.onclick=()=>openForm(s);g.appendChild(b)})}
+buildServices();
+</script></div></body></html>
